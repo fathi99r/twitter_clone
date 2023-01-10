@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    />
+
+    <title>Twitter clone</title>
+  </head>
+
+  <body>
+    <header>
+      <aside>
+        <a href="#" class="logo"><i class="fab fa-twitter"></i></a>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-hashtag"></i>Explore</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notification</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-message"></i>Notification</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bookmark"></i>BookMark</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-clipboard-list"></i>List</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-ellipsis"></i>More</a>
+          </li>
+        </ul>
+        <button>Tweet</button>
+      </aside>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search on twitter..." />
+          </div>
+          <div class="user">
+            <h6>Hey,Fathi!</h6>
+            <img src="imges/p1.JPG" alt="" />
+          </div>
+        </nav>
+        <div class="profile_post_follow_box">
+          <div class="profile_box">
+            <div class="profile_card">
+              <img src="icon/bluetick.png" alt="" class="blue_tick" />
+              <img src="imges/p1.JPG" alt="" class="profile_img" />
+              <h5>fathi rami abu samra</h5>
+              <h6>@fathi_rami</h6>
+              <address>
+                <a href="#">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Palestine
+                </a>
+              </address>
+              <div class="data">
+                <div class="data_card">
+                  <p>Tweets</p>
+                  <h4>984</h4>
+                </div>
+                <div class="data_card">
+                  <p>followers</p>
+                  <h4>15.6k</h4>
+                </div>
+                <div class="data_card">
+                  <p>following</p>
+                  <h4>99</h4>
+                </div>
+              </div>
+              <div class="activity_box">
+                <div class="activity_card">
+                  <i class="fa-solid fa-eye"></i>
+                  <h6>Activity</h6>
+                </div>
+                <div class="activity_card">
+                  <i class="fa-solid fa-bolt"></i>
+                  <h6>Moments</h6>
+                </div>
+                <div class="activity_card">
+                  <i class="fa-solid fa-user-group"></i>
+                  <h6>Friends</h6>
+                </div>
+                <div class="activity_card">
+                  <i class="fa-solid fa-gear"></i>
+                  <h6>Edit profile</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post_follow_box">
+            <div class="post">
+              <nav>
+                <ul>
+                  <li><a href="#">Tweets</a></li>
+                  <li><a href="#">Tweets & Followers</a></li>
+                  <li><a href="#">Media</a></li>
+                  <li><a href="#">Likes</a></li>
+                </ul>
+                <i class="fa-solid fa-ellipsis"></i>
+              </nav>
+              <div class="new_tweet"></div>
+
+              <div class="new-tweet">
+                <div class="new1">
+                  <img src="imges/p1.JPG" class="images" />
+                </div>
+                <div class="new-details">
+                  <input
+                    type="text"
+                    id="tweet-text"
+                    placeholder="what's happening?"
+                  />
+                  <div class="actions">
+                    <ul>
+                      <li>
+                        <i class="material-icons-outlined">image</i>
+                      </li>
+                      <li>
+                        <i class="material-icons-outlined">gif_box</i>
+                      </li>
+                      <li>
+                        <i class="material-icons-outlined">poll</i>
+                      </li>
+                      <li>
+                        <i class="material-icons-outlined"
+                          >sentiment_satisfied</i
+                        >
+                      </li>
+                      <li>
+                        <i class="material-icons-outlined">event</i>
+                      </li>
+                    </ul>
+                    <button class="tweetbtn" id="tweetbtn">tweet</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post_main_box" id="post_main_box"></div>
+            </div>
+
+            <div class="follow_box">
+              <div class="trend_for_you">
+                <nav>
+                  <h6>Trend for you</h6>
+                  <i class="fa-solid fa-gear"></i>
+                </nav>
+                <div class="trend_box">
+                  <div class="rate">
+                    <li>
+                      <a href="#"
+                        >#gaza <br />
+                        <p>658k tweets</p>
+                      </a>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <div class="interest">
+                      <button class="smile">
+                        <i class="fa-solid fa-face-smile"></i>Interested
+                      </button>
+                      <button class="frown">
+                        <i class="fa-solid fa-face-frown"></i>not Interested
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="rate">
+                    <li>
+                      <a href="#"
+                        >#palestine <br />
+                        <p>852k tweets</p>
+                      </a>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <div class="interest">
+                      <button class="smile">
+                        <i class="fa-solid fa-face-smile"></i>Interested
+                      </button>
+                      <button class="frown">
+                        <i class="fa-solid fa-face-frown"></i>not Interested
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="rate">
+                    <li>
+                      <a href="#"
+                        >#freePalestine <br />
+                        <p>963k tweets</p>
+                      </a>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <div class="interest">
+                      <button class="smile">
+                        <i class="fa-solid fa-face-smile"></i>Interested
+                      </button>
+                      <button class="frown">
+                        <i class="fa-solid fa-face-frown"></i>not Interested
+                      </button>
+                    </div>
+                  </div>
+                  <div class="rate">
+                    <li>
+                      <a href="#"
+                        >#fifa_world_cup <br />
+                        <p>963k tweets</p>
+                      </a>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </li>
+                    <div class="interest">
+                      <button class="smile">
+                        <i class="fa-solid fa-face-smile"></i>Interested
+                      </button>
+                      <button class="frown">
+                        <i class="fa-solid fa-face-frown"></i>not Interested
+                      </button>
+                    </div>
+                  </div>
+                  <button class="see_more">SEE MORE</button>
+                </div>
+              </div>
+              <div class="you_should_follow">
+                <nav>
+                  <h6>You should Follow</h6>
+                  <i class="fa-solid fa-rotate-right"></i>
+                </nav>
+                <div class="follow_box">
+                  <div class="follow_profile_name">
+                    <img src="imges/p2.jpeg" alt="" class="follow_profile" />
+                    <div class="user_name">
+                      <div class="user_name_follow">
+                        <h6>Ms fathi</h6>
+                        <img
+                          src="icon/bluetick.png"
+                          alt=""
+                          style="width: 15px; height: 15px; border-radius: 50%"
+                        />
+                      </div>
+                      <p
+                        style="
+                          font-size: 11px;
+                          color: rgb(0, 0, 0, 0.4);
+                          font-weight: 600;
+                        "
+                      >
+                        @msfathi
+                      </p>
+                    </div>
+                  </div>
+                  <button>Follow</button>
+                </div>
+
+                <div class="follow_box">
+                  <div class="follow_profile_name">
+                    <img src="imges/p2.jpeg" alt="" class="follow_profile" />
+                    <div class="user_name">
+                      <div class="user_name_follow">
+                        <h6>Ms ahmed</h6>
+                        <img
+                          src="icon/bluetick.png"
+                          alt=""
+                          style="width: 15px; height: 15px; border-radius: 50%"
+                        />
+                      </div>
+                      <p
+                        style="
+                          font-size: 11px;
+                          color: rgb(0, 0, 0, 0.4);
+                          font-weight: 600;
+                        "
+                      >
+                        @msfathi
+                      </p>
+                    </div>
+                  </div>
+                  <button>Follow</button>
+                </div>
+
+                <div class="follow_box">
+                  <div class="follow_profile_name">
+                    <img src="imges/p2.jpeg" alt="" class="follow_profile" />
+                    <div class="user_name">
+                      <div class="user_name_follow">
+                        <h6>Ms abood</h6>
+                        <img
+                          src="icon/bluetick.png"
+                          alt=""
+                          style="width: 15px; height: 15px; border-radius: 50%"
+                        />
+                      </div>
+                      <p
+                        style="
+                          font-size: 11px;
+                          color: rgb(0, 0, 0, 0.4);
+                          font-weight: 600;
+                        "
+                      >
+                        @msfathi
+                      </p>
+                    </div>
+                  </div>
+                  <button>Follow</button>
+                </div>
+
+                <div class="follow_box">
+                  <div class="follow_profile_name">
+                    <img src="imges/p2.jpeg" alt="" class="follow_profile" />
+                    <div class="user_name">
+                      <div class="user_name_follow">
+                        <h6>Ms nader</h6>
+                        <img
+                          src="icon/bluetick.png"
+                          alt=""
+                          style="width: 15px; height: 15px; border-radius: 50%"
+                        />
+                      </div>
+                      <p
+                        style="
+                          font-size: 11px;
+                          color: rgb(0, 0, 0, 0.4);
+                          font-weight: 600;
+                        "
+                      >
+                        @msfathi
+                      </p>
+                    </div>
+                  </div>
+                  <button>Follow</button>
+                </div>
+                <button class="see_more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

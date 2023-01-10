@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40200%3B300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap%27%29%3B');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: 'poppins', 'sans-serif';
+   
+}
+
+header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: #f4f8fb;*/
+}
+
+header aside {
+    width: 15%;
+    height: 100%;
+    background: #fff;
+    padding: 15px 0px 15px 30px;
+}
+
+header section {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    /* border: 2px solid green;*/
+
+}
+
+.logo {
+    font-size: 30px;
+    color: #1ca1f1;
+}
+
+header aside ul {
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+header aside ul li {
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+
+header aside ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s linear;
+}
+
+header aside ul li a:hover {
+    color: #1ca1f1;
+}
+
+header aside ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header aside ul li:nth-child(7) {
+    border-right: solid 3px #1ca1f1;
+}
+
+header aside ul li:nth-child(7) a {
+    color: #1ca1f1;
+}
+
+header aside button {
+    margin-top: 10px;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #1ca1f1;
+    transition: 0.3s linear;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+header aside button:hover {
+    background-color: rgb(28, 161, 241, 0.5);
+}
+
+header section nav {
+    width: 100%;
+    height: 8%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header section nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+}
+
+header section nav ul li {
+    padding: 3px 25px 3px 0px;
+}
+
+header section nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.3s linear;
+}
+
+header section nav ul li a:hover {
+    color: gray;
+}
+
+header section nav .search_bar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fb;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+header section nav .search_bar input {
+    width: 90%;
+    padding: 3px 15px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: none;
+}
+
+header section nav .user {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+}
+
+header section nav .user img {
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+header section nav .user h6 {
+    color: #000;
+    font-size: 12px;
+
+}
+
+header section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background: url(imges/p2.jpeg)no-repeat center center/cover;
+    top: 8%;
+    border-radius: 0px 0px 20px 0px;
+    opacity: 0.9;
+}
+
+header section .profile_post_follow_box {
+    position: relative;
+    top: 18%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #000;*/
+    display: flex;
+
+    justify-content: center;
+
+}
+
+header section .profile_post_follow_box .profile_box {
+    width: 250px;
+    height: auto;
+    /*border: 1px solid #000;*/
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.profile_card {
+    position: relative;
+    width: 92%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0, 0.2);
+    padding: 15px 10px 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.blue_tick {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+}
+
+.profile_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile_card h5 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profile_card h6 {
+    color: rgb(0, 0, 0, 0.3);
+    font-size: 10px;
+    padding: 2px 0px;
+}
+
+.profile_card address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.profile_card address a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+}
+
+.profile_card address a:nth-child(2) {
+    margin-left: 10px;
+}
+
+.data {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.data .data_card {
+    width: 33.33%;
+}
+
+.data_card:nth-child(2) {
+    border-left: 1px solid rgb(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(0, 0, 0, 0.1)
+}
+
+.data_card p,
+h4 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 10px;
+    align-items: center;
+    color: rgb(0, 0, 0, 0.4);
+
+}
+
+.data_card h4 {
+    font-size: 12px;
+    padding: 3px 0px 7px 0px;
+    color: #000;
+}
+
+.activity_box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*border: 1px solid #000;*/
+    margin-top: 10px;
+}
+
+.activity_card {
+    height: 90px;
+    width: 110px;
+    border: 2px solid rgb(213, 218, 222, 0.5);
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+    cursor: pointer;
+
+}
+
+.activity_card:nth-child(1) {
+    background: white;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+
+}
+
+.activity_card i,
+h6 {
+    font-size: 11px;
+    color: #d5dade;
+    padding-top: 10px;
+    transition: 0.3s linear;
+
+}
+
+.activity_card h6 {
+    color: rgb(0, 0, 0, 0.6);
+    font-size: 11px;
+
+}
+
+.activity_card:hover {
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+}
+
+.activity_card:hover h6 {
+    color: #1ca1f1;
+}
+
+.activity_card:hover i {
+    color: #1ca1f1;
+}
+
+.activity_card:nth-child(1) i {
+    color: #1ca1f1;
+}
+
+.activity_card:nth-child(1) h6 {
+    color: #1ca1f1;
+}
+
+.post_follow_box {
+    width: auto;
+    height: auto;
+    /*border: 1px solid #000;*/
+    margin-left: 20px;
+    display: flex;
+}
+
+.post {
+    width: 500px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.follow_box {
+    width: 250px;
+    height: auto;
+    margin-left: 15px;
+    /* border: 1px solid rgb(0, 0, 0, 0.1);*/
+
+}
+
+.post nav {
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    height: 10%;
+}
+
+.post nav ul {
+    padding-left: 20px;
+}
+
+.post nav i {
+    padding-right: 20px;
+    color: rgb(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.post nav i:hover {
+    color: rgb(0, 0, 0);
+}
+
+.post nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 0px;
+    margin-right: 10px;
+    transition: .3s linear;
+    border-bottom: 3px solid transparent;
+
+}
+
+.post nav li:hover {
+    color: #1ca1f1;
+    border-bottom: 3px solid #1ca1f1;
+
+
+}
+
+.post nav li a {
+    padding: 12px 8px;
+}
+
+.post nav li a:hover {
+    color: #1ca1f1;
+
+}
+
+.post_main_box {
+    width: 99.5%;
+    height: 89.5%;
+    overflow: auto;
+    /*border: 1px solid #000;*/
+
+}
+
+.post_main_box::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 20px;
+    background: rgb(0, 0, 0, 0.1);
+}
+
+.post_main_box::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 20px;
+    background: rgb(0, 0, 0, 0.2);
+}
+
+.post_card {
+    width: 93%;
+    height: auto;
+    background: #fff;
+    padding: 12px 15px 0px 15px;
+    display: flex;
+}
+
+.post_profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.post_main_box .post_card .content {
+    width: 90%;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+.content .retweet {
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0, 0.3);
+    font-size: 11px;
+}
+
+.content .retweet {
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.user_name_time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_name_time h5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.user_name_time h5 img {
+    width: 15px;
+    margin-left: 10px;
+}
+
+.user_name_time h5 p {
+    font-size: 12px;
+    color: rgb(0, 0, 0, 0.3);
+    margin-left: 10px;
+}
+
+.user_name_time h6 {
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.user_name_time h6 i {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.content h3 {
+    font-size: 11px;
+    font-weight: 500;
+    word-break: break-all;
+    margin-top: 10px;
+}
+
+.content .retweet_content_box {
+    width: 93%;
+    height: auto;
+    padding: 5px 10px;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.user_name_time h5 img:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tweet_card_social_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+
+}
+
+.tweet_card_social_data .tweet_social_card {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(2) {
+    border-left: 1px solid rgb(0, 0, 0, 0.1);
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(3) {
+    border-right: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+
+.tweet_card_social_data .tweet_social_card i {
+    color: rgb(0, 0, 0, 0.2);
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.tweet_card_social_data .tweet_social_card span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tweet_card_social_data .tweet_social_card:nth-child(3) i {
+    color: red;
+}
+.tweet_card_social_data button{
+    background-color: #fff; border: none; cursor: pointer;
+}
+
+.image_post_box {
+    width: 93%;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+}
+
+.image_post_box img {
+    width: 130px;
+    height: 90px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.trend_for_you {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.1);
+}
+
+.trend_for_you nav {
+    align-items: center;
+    width: 88%;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+
+.trend_for_you nav h6 {
+    padding: 0px;
+    font-size: 12px;
+    color: #000;
+}
+
+.trend_for_you .trend_box {
+    width: 90%;
+    height: auto;
+    padding: 15px 15px 0px 15px;
+}
+
+.trend_for_you .trend_box li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.trend_for_you .trend_box li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+
+.trend_for_you .trend_box li a p {
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.4);
+}
+
+.trend_for_you .trend_box li i {
+    font-size: 12px;
+
+}
+
+.trend_for_you .trend_box .rate button {
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 5px;
+    color: rgb(0, 0, 0, 0.6);
+    transition: 03s linear;
+    cursor: pointer;
+}
+
+.trend_for_you .trend_box .rate button:hover {
+    color: rgb(0, 0, 0);
+}
+
+.trend_for_you .trend_box .rate button i {
+    margin-right: 5px;
+}
+
+.trend_for_you .trend_box .rate .interest {
+    height: 0px;
+    overflow: hidden;
+}
+
+.trend_for_you .trend_box .see_more {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 0px;
+    transition: 0.3s linear;
+    cursor: pointer;
+
+}
+
+.trend_for_you .trend_box .see_more:hover {
+    color: #000;
+}
+
+.you_should_follow {
+    margin-top: 15px;
+}
+
+.you_should_follow nav {
+    align-items: center;
+    width: 88%;
+    height: auto;
+    padding: 15px;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+}
+
+.you_should_follow nav h6 {
+    padding: 0px;
+    font-size: 12px;
+    color: #000;
+}
+
+.you_should_follow .follow_box {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 15px 0px 15px;
+}
+
+.you_should_follow .follow_box .follow_profile_name {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.you_should_follow .follow_box .follow_profile_name img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.you_should_follow .follow_box .follow_profile_name .user_name {
+    margin-left: 10px;
+}
+
+.you_should_follow .follow_box .follow_profile_name .user_name_follow {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.follow_profile_name .user_name_follow h6{
+    color: #000; ;
+    padding: 0;
+    width: 75%;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.follow_profile_name .user_name_follow img{
+width: 5px;
+height: 5px;
+margin-left: 5px;
+}
+.you_should_follow .follow_box button{
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background: #1ca1f1;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 10px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.you_should_follow .follow_box button:hover{
+    background: rgb(28, 161, 241, 0.5);
+
+
+}
+.follow_box .you_should_follow .see_more {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 10px 0px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.follow_box .you_should_follow .see_more:hover {
+    color: #000;
+}
+
+.new-tweet{
+    margin-top: 15px;
+    display: flex;
+    width: 85%;  
+    padding: 4px 15px;
+   align-items: center;
+
+   
+}
+.new-tweet .new1 .images{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 45px;
+}
+.new-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 4px;
+    width: 90%;
+    margin-left: 12px;
+}
+.actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+.actions ul{
+    display: flex;
+    list-style: none;
+
+}
+.new-details input{
+    width: 100%;
+    height: 24%;
+    background-color: white;
+    font-size: 15px;
+    border: solid 1px #1c89d200;
+    color: black;
+    outline: none;
+}
+.actions ul li{
+    margin-right: 12px;
+    color: #1c88d2;
+    cursor: pointer;
+}
+.actions .tweetbtn{
+   border: none;
+   outline: none;
+   padding: 8px 12px;
+   background: #1ca1f1;
+   color: #fff;
+   border-radius: 20px;
+   font-size: 15px;
+   transition: 0.3s linear;
+   cursor: pointer;
+}
+.actions .tweetbtn:hover{
+    background: rgb(28, 161, 241, 0.5);
+
+   
+ }
+
