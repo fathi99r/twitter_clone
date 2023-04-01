@@ -1,2 +1,2 @@
 # twitter_clone
-my second project to GSG
+my project to GSG
