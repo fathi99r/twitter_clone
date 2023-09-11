@@ -17,6 +17,7 @@ const createTweet = (author, tweet) => {
   const hour = time.getHours();
   const minute = time.getMinutes();
   const tweetDiv = document.createElement("div");
+  console.log(tweetDiv)
 
   tweetDiv.classList.add("post_card");
 
