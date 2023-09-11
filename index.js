@@ -18,7 +18,7 @@ const createTweet = (author, tweet) => {
   const minute = time.getMinutes();
   const tweetDiv = document.createElement("div");
   console.log(tweetDiv)
-
+  console.log(minute)
   tweetDiv.classList.add("post_card");
 
   const content = document.createElement("div");
